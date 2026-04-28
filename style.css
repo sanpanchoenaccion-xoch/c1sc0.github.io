@@ -35,7 +35,7 @@ body {
 /* Hero */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url('fotos/portada.png') center/cover;
+                url('portada.png') center/cover;
     height: 60vh;
     display: flex;
     align-items: center;
