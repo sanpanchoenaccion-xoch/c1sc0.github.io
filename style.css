@@ -1,0 +1,583 @@
+/* Variables de color rústicas y naturales */
+:root {
+    --primary: #2e7d32; /* Verde bosque */
+    --secondary: #8d6e63; /* Tierra */
+    --accent: #fbc02d; /* Luz/Aviso */
+    --dark: #212121;
+    --light: #f5f5f5;
+}
+
+/* ===== MOBILE OPTIMIZATION ===== */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    overflow-x:hidden;
+    background:#f5f5f5;
+    color:#222;
+}
+
+/* NAVBAR */
+
+.navbar{
+    padding:15px;
+    text-align:center;
+    background:#2d5a3d;
+    color:white;
+}
+
+.logo{
+    font-size:18px;
+    margin-bottom:5px;
+}
+
+/* BOTONES */
+
+.grid-botones{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+}
+
+.grid-botones button{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:12px;
+    background:#3d7a52;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* SECCIONES */
+
+section{
+    padding:20px;
+}
+
+h2{
+    margin-bottom:10px;
+}
+
+p{
+    line-height:1.5;
+}
+
+/* IMAGENES */
+
+img{
+    width:100%;
+    height:auto;
+    border-radius:12px;
+    margin-top:15px;
+}
+
+/* CARDS */
+
+.project-card{
+    margin-top:20px;
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* BARRA */
+
+.progress-bar{
+    width:100%;
+    height:10px;
+    background:#ddd;
+    border-radius:10px;
+    overflow:hidden;
+    margin-top:10px;
+}
+
+.progress{
+    height:100%;
+    background:#2d5a3d;
+}
+
+/* BOTON REGRESAR */
+
+.btn-regresar{
+    margin-bottom:20px;
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    background:#222;
+    color:white;
+}
+
+/* CONTACTO */
+
+.social-links{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:20px;
+}
+
+.social-icon{
+    font-size:28px;
+    color:#2d5a3d;
+}
+
+/* WHATSAPP */
+
+.whatsapp-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+    z-index:999;
+}
+
+.pdf-btn{
+    display:block;
+    text-align:center;
+    padding:18px;
+    background:#3d7a52;
+    color:white;
+    border-radius:12px;
+    text-decoration:none;
+}
+
+/* HIDDEN */
+
+.hidden{
+    display:none;
+}
+
+/* DESKTOP */
+
+@media(min-width:768px){
+
+    .grid-botones{
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .grid-botones button{
+        width:300px;
+    }
+
+    .navbar{
+        padding:25px;
+    }
+
+    .logo{
+        font-size:24px;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: var(--light);
+}
+
+.container { max-width: 1100px; margin: auto; padding: 20px; }
+
+/* Navbar */
+.navbar {
+    background: var(--primary);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo span { font-weight: bold; color: var(--accent); }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links a { color: white; text-decoration: none; font-weight: 500; }
+
+/* Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('portada.png') center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.btn-main {
+    background: var(--accent);
+    color: var(--dark);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* Cards */
+.section-title { text-align: center; margin: 40px 0; }
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.done { background: #c8e6c9; color: #2e7d32; }
+.process { background: #bbdefb; color: #1976d2; }
+.alert { background: #ffecb3; color: #ffa000; }
+
+.progress-bar { background: #eee; height: 10px; border-radius: 10px; margin-top: 15px; }
+.progress { background: var(--primary); height: 100%; border-radius: 10px; }
+
+/* Info Block */
+.info-block { background: var(--primary); color: white; text-align: center; padding: 60px 0; }
+.stats { display: flex; justify-content: space-around; margin-top: 30px; }
+.stat-item strong { display: block; font-size: 2.5rem; color: var(--accent); }
+
+footer { text-align: center; padding: 20px; background: #333; color: white; }
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.social-icon {
+  width: 45px;
+  height: 45px;
+  background-color: #2d5a27; /* Verde de la comunidad */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.social-icon:hover {
+  transform: translateY(-5px);
+  background-color: #fbc02d; /* Amarillo de aviso */
+  color: #212121;
+}
+
+/* Estilos para el botón flotante */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    transform: scale(1.1);
+}
+
+/* Tooltip (Etiqueta de texto al pasar el mouse) */
+.tooltip {
+    visibility: hidden;
+    width: 160px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    right: 120%; /* Aparece a la izquierda del botón */
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.whatsapp-float:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.galeria-transitoria {
+    position: relative;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.slides {
+    position: relative;
+    height: 450px; /* Ajusta la altura según necesites */
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+/* Botones Navegación */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(45, 90, 39, 0.7);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: background 0.3s;
+}
+
+.prev:hover, .next:hover { background: #2d5a27; }
+.next { right: 0; }
+
+/* Puntos */
+.dots {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active { background-color: #2d5a27; }
+
+.carrusel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden; /* Corta lo que sale del cuadro */
+    border-radius: 15px;
+}
+
+.carrusel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Velocidad del deslizamiento */
+    width: 100%;
+}
+
+.carrusel-slide {
+    min-width: 100%; /* Cada imagen ocupa todo el ancho del contenedor */
+    position: relative;
+}
+
+.carrusel-slide img {
+    width: 100%;
+    display: block;
+    height: 450px;
+    object-fit: cover;
+}
+
+.carrusel-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Botones */
+.carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carrusel-btn:hover { background: rgba(0,0,0,0.8); }
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.seccion-galeria {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.contenedor-recuadro {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.titulo-galeria {
+    text-align: center;
+    color: #2d5a27;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.mural-imagenes {
+    display: grid;
+    /* Crea 2 columnas en móviles y 4 en pantallas grandes */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.cuadro-foto {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 200px;
+    background-color: #eee;
+}
+
+.cuadro-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Efecto al pasar el mouse */
+.cuadro-foto:hover img {
+    transform: scale(1.1);
+}
+
+.info-cuadro {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(45, 90, 39, 0.8);
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.cuadro-foto:hover .info-cuadro {
+    transform: translateY(0);
+}
+
+/* Todas las vistas ocupan el mismo espacio */
+.vista {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* El truco para ocultar/mostrar */
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.grid-botones {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background: #2d5a27;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-regresar {
+    background: #666;
+    margin-bottom: 20px;
+}
