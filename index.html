@@ -397,38 +397,17 @@
 
     </nav>
 
-    <!-- ================= HERO CARRUSEL ================= -->
+    <!-- ================= HERO ================= -->
 
-<header class="hero">
+    <header class="hero">
 
-    <div class="hero-slider">
+        <div class="hero-content">
 
-        <img class="hero-slide active"
-             src="fotos/portada1.jpeg">
+          <!--  <h1>San Francisco Tlalnepantla</h1>-->
 
-        <img class="hero-slide"
-             src="fotos/portada2.jpeg">
+        </div>
 
-        <img class="hero-slide"
-             src="fotos/portada3.jpeg">
-
-    </div>
-
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content">
-
-        <h1>
-            San Francisco Tlalnepantla
-        </h1>
-
-        <p>
-            Pueblo Originario de Xochimilco
-        </p>
-
-    </div>
-
-</header>
+    </header>
 
     <!-- ================= MENU ================= -->
 
@@ -649,34 +628,6 @@
     </footer>
 
     <!-- ================= SCRIPT ================= -->
-	
-	/* ================= HERO SLIDER ================= */
-
-let heroIndex = 0;
-
-const heroSlides =
-    document.querySelectorAll('.hero-slide');
-
-function cambiarHero(){
-
-    heroSlides[heroIndex]
-        .classList
-        .remove('active');
-
-    heroIndex++;
-
-    if(heroIndex >= heroSlides.length){
-
-        heroIndex = 0;
-    }
-
-    heroSlides[heroIndex]
-        .classList
-        .add('active');
-
-}
-
-setInterval(cambiarHero, 5000);
 
     <script>
 
