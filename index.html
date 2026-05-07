@@ -449,8 +449,8 @@
                 🌲 Programa Altépetl Bienestar
             </button>
 
-            <button onclick="mostrarVista('faenas1')">
-                🍃 Faenas Pueblo
+            <button onclick="mostrarVista('pilares1')">
+                🍃 Pilares
             </button>
 
             <button onclick="mostrarVista('eventos1')" class="btn-cursos">
@@ -466,6 +466,12 @@
             <a class="pdf-btn" href="programaordenamiento.pdf" target="_blank">
 
                 🌿 Ordenamiento ecológico
+
+            </a>
+			
+			<a class="pdf-btn" href="presupuestoparticiptivo.pdf" target="_blank">
+
+                🏥 Presupuesto participativo
 
             </a>
 			
@@ -492,11 +498,9 @@
 		
 		<a href="https://www.facebook.com/share/v/1DSSXGXFt2/" target="_blank">Video</a>
 
-        <h2>Programa Altepetl Bienestar 2026</h2>
-
-        <p>
-            Información sobre las acciones.
-        </p>
+         <button onclick="mostrarVista('faenas1')">
+                🍃 Faenas pueblo
+         </button>
 
         <img src="fotos/altepetl.png" alt="Reforestación">
 
@@ -551,6 +555,90 @@
         </div>
 
     </section>
+	
+	<!-- ================= Pilares ================= -->
+
+   <section id="pilares1" class="vista hidden">
+
+    <button class="btn-regresar" onclick="mostrarVista('menu-principal')">
+        ← Regresar
+    </button>
+
+    <h2 class="titulo-galeria">Actividades en PILARES</h2>
+
+    <div class="galeria-pilares">
+
+        <img src="fotos/Acondicionamiento.jpg" alt="Foto 1">
+
+        <img src="fotos/Taekwondo.jpg" alt="Foto 2">
+
+        <img src="fotos/Baloncesto.jpeg" alt="Foto 3">
+
+        <img src="fotos/Toma de Signos.jpeg" alt="Foto 4">
+
+        <img src="fotos/Dibujo.jpeg" alt="Foto 5">
+
+        <img src="fotos/Muralismo.jpeg" alt="Foto 6">
+		
+		 <img src="fotos/Reciclaje.jpeg" alt="Foto 7">
+		 
+		  <img src="fotos/Cartoneria Tradicional.jpeg" alt="Foto 8">
+		  
+		   <img src="fotos/Alfabetización Digital.jpeg" alt="Foto 9">
+		   
+		    <img src="fotos/Ajedrez.jpeg" alt="Foto 10">
+			
+			<img src="fotos/Origami y Papiroflexia.jpeg" alt="Foto 11">
+		  
+		   <img src="fotos/Club de Lectura.jpeg" alt="Foto 12">
+		   
+		    <img src="fotos/Medicina Tradicional.jpeg" alt="Foto 13">
+			
+			<img src="fotos/Baile Social.jpeg" alt="Foto 14">
+			
+			<img src="fotos/Lectoescritura.jpeg" alt="Foto 15">
+			
+			<img src="fotos/Ingles Kids.jpeg" alt="Foto 16">
+			
+			<img src="fotos/Inteligencia Artificial.jpeg" alt="Foto 17">
+			
+			<img src="fotos/Preescolar.jpeg" alt="Foto 18">
+			
+			<img src="fotos/Robotica Educativa.jpeg" alt="Foto 19">
+
+    </div>
+
+</section>
+
+<style>
+.titulo-galeria{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 32px;
+    color: #7b1fa2;
+}
+
+.galeria-pilares{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.galeria-pilares img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.galeria-pilares img:hover{
+    transform: scale(1.05);
+}
+</style>
 
     <!-- ================= EVENTOS ================= -->
 
