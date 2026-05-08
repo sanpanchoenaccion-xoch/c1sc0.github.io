@@ -522,7 +522,7 @@
 
     <section id="faenas1" class="vista hidden">
 
-        <button class="btn-regresar" onclick="mostrarVista('menu-principal')">
+        <button class="btn-regresar" onclick="mostrarVista('altepetl')">
 
             ← Regresar
 
@@ -619,6 +619,13 @@
     padding: 20px;
 }
 
+.galeria-cursos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
 .galeria-pilares img{
     width: 100%;
     height: 220px;
@@ -629,7 +636,21 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+.galeria-cursos img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
 .galeria-pilares img:hover{
+    transform: scale(1.05);
+}
+
+.galeria-cursos img:hover{
     transform: scale(1.05);
 }
 </style>
@@ -680,15 +701,27 @@
 
         <h2>Próximos cursos</h2>
 
-        <p>
-            
-        </p>
-
         <img src="fotos/cursos.jpeg" alt="Eventos">
 		
-		<h2>Se habilitará entre el jueves y viernes un contacto de Whatsapp para que hagan llegar su interés por algún curso y se les agregue al grupo.</h2>
+		<h2>Para más información, comunicarse vía WhatsApp</h2>
 		
 		 <img src="fotos/horarios cursos.jpeg" alt="Eventos">
+		 
+		 <div class="galeria-cursos">
+
+        <img src="fotos/curso1.jpeg" alt="Foto 1">
+
+        <img src="fotos/curso2.jpeg" alt="Foto 2">
+
+        <img src="fotos/curso3.jpeg" alt="Foto 3">
+
+        <img src="fotos/curso4.jpeg" alt="Foto 4">
+
+        <img src="fotos/curso5.jpeg" alt="Foto 5">
+
+        
+
+    </div>
 
         <div class="project-card">
 
@@ -767,7 +800,7 @@
 
     <!-- ================= WHATSAPP ================= -->
 
-    <a href="https://wa.me/525512345678"
+    <a href="https://wa.me/5644082342"
 
        class="whatsapp-float"
 
